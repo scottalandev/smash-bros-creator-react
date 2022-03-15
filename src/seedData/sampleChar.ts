@@ -1,8 +1,8 @@
 export let sampleChar = {
     //General
-    charName: 'Dovahkiin',
-    catchPhrase: 'By His Honor is Sworn',
-    nJumps: 2,
+    name: 'Dovahkiin',
+    phrase: 'By His Honor is Sworn',
+    jumps: 2,
     weight: 100,
     specPerk: 'When opponent is killed, Dovahkiin absorbs the soul of the fallen, converting it into an increase of his Final Smash meter',
     

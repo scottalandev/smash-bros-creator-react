@@ -1,8 +1,8 @@
 export let emptyChar = {
     //General
     charName: '',
-    catchPhrase: '',
-    nJumps: 2, //2-6
+    phrase: '',
+    jumps: 2, //2-6
     weight: 100, //range in game=62-135 (150 for gigaBowser)
     specPerk: '',
     
