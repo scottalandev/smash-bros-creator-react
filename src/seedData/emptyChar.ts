@@ -5,6 +5,7 @@ export let emptyChar = {
     jumps: 2, //2-6
     weight: 100, //range in game=62-135 (150 for gigaBowser)
     specPerk: '',
+    wallJump: false,
     
     //Gen Attacks
     jab: {

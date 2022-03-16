@@ -1,46 +1,64 @@
-# Getting Started with Create React App
+# Super Smash Bros. Ultimate Character Creator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+This project, in early development (as of 3/15/2022) is front end code for a web-based single page app for the creation of complete movesets of new/proposed/imagined characters for the Nintendo Switch Fighting Game ***Super Smash Bros. Ultimate*** (SSBU). My 8-year-old son loves to imagine new characters he'd include in the game, and so I began developing this app to help him with his creativity process, and as self-exercise in integrating TypeScript into React.
 
-In the project directory, you can run:
+## Project Info
 
-### `npm start`
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), with the option `--template typescript`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## To Run
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Clone this git repository, run `npm install` to install dependencies, and `npm start` to open the default Create React App local development server at [http://localhost:3000](http://localhost:3000).
 
-### `npm test`
+There are other scripts available by default courtesy of Create React App. Check out the **package.json** file and the CRA docs for more info.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Development Plans
 
-### `npm run build`
+This app will allow users to create and save their imagined SSBU characters. Creating a character entails defining some core characteristics and a complete list of possible moves, most of which get a name and description, and some of which have additional properties to define.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### List of Character Properties
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Following is a list of controls and character properties in SSBU.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **General Props**
+    - Name
+    - Character Catchphrase
+    - Number of Jumps (2-6)
+    - Weight
+    - Special Perks/Abilities
+    - WallJump (boolean)
+- **Attacks**
+    - Tilt Attacks (3)
+    - Smash Attacks (4)
+    - Special Attacks (4)
+    - Aerial Attacks (4)
+    - Grab/Throw Attacks (5)
+- **Other**
+    - Taunts (3)
+    - Final Smash
 
-### `npm run eject`
+### User Interface
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Architecturally, this will be a fairly small app, at least in its early iterations. Projected pages/views include:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Home/Introductory landing page
+- Character Creation Form/Interface
+- Character View
+- User home/dashboard
+- User registration/authentication functionality
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Styling concerns have not been considered yet.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Future Functionality
 
-## Learn More
+Some ideas for future development include:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Sharing/gallery/browsing of 'published' characters created by other users
+- Templating for users to create offline docs (such as a pdf) with which to keep, view, display, share their creations outside the app
+- Inclusion of richer content options i.e. images, sounds, animations, for characters.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contact
+
+This app is under solo development by full stack developer Scott Alan. Please reach out to him at scottalandev@gmail.com with questions/comments.
