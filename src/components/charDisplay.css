@@ -1,0 +1,12 @@
+table {
+    text-align: left;
+    padding: 10px;
+}
+
+td, th {
+    padding-left: 10px;
+}
+
+.ul {
+    text-decoration: underline;
+}

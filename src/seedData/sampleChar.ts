@@ -113,15 +113,15 @@ export let sampleChar = {
     },
 
     //Taunts
-    taunt1: {
+    tauntSd: {
         name: 'Shield Bang',
         desc: 'Bangs shield with sword'
     },
-    taunt2: {
+    tauntUp: {
         name: 'Fire Spout',
         desc: 'Shoots a small blast of fire into the air'
     },
-    taunt3: {
+    tauntDn: {
         name: 'Frost Spread',
         desc: 'Covers the ground with frost'
     },
@@ -129,7 +129,7 @@ export let sampleChar = {
     //Final
     finalSmash: {
         name: 'Breath of Paarthurnax',
-        targetStyle: 'reticle',
+        targetStyle: 'Reticle',
         desc: 'Paarthurnax descends behind stage. Dovahkiin aims reticle to strike opponents with a giant fire breath'
     }
 }
