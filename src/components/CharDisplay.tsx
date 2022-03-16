@@ -22,6 +22,11 @@ export function CharDisplay({ char }) {
                         <th>Special Perk: </th>
                         <td>{char.specPerk}</td>
                     </tr>
+                    <tr>
+                        <th>Wall Jump: </th>
+                        <td>{(char.wallJump == true)? 'Yes' : 'No'}</td>
+                    </tr>
+
                 </table>
             
             <h3>Neutral (Jab) Attack</h3>

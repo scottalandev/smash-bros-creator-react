@@ -5,6 +5,7 @@ export let sampleChar = {
     jumps: 2,
     weight: 100,
     specPerk: 'When opponent is killed, Dovahkiin absorbs the soul of the fallen, converting it into an increase of his Final Smash meter',
+    wallJump: false,
     
     //Gen Attacks
     jab: {
