@@ -30,6 +30,7 @@ export function CharDisplay({ char }) {
                 </table>
             
             <h3>Neutral (Jab) Attack</h3>
+            <h6>Neutral/Jab attacks are weak, basic attacks performed by pressing A.</h6>
                 <table>
                     <tr className="ul">
                         <th>Name</th>
@@ -46,6 +47,7 @@ export function CharDisplay({ char }) {
                 </table>
             
             <h3>Dash Attack</h3>
+            <h6>Dash attacks are performed by pressing A while sprinting.</h6>
                 <table>
                     <tr className="ul">
                         <th>Name</th>
@@ -58,6 +60,7 @@ export function CharDisplay({ char }) {
                 </table>
             
             <h3>Tilt Attacks</h3>
+            <h6>Tilt attacks are performed by combining directional input and A. Pressing a direction and A <em>at the same time</em>, however produces a <em>SMASH ATTACK</em>. One surefire way to produce a tilt attack is to lean the Control Stick halfway in the intended direction.</h6>
                 <table>
                     <tr className="ul">
                         <th>Move Type</th>
@@ -82,6 +85,7 @@ export function CharDisplay({ char }) {
                 </table>
             
             <h3>Smash Attacks</h3>
+            <h6>Smash Attacks are performed by quickly moving the control stick in a direction and pressing A at the same moment. They are alternatively (and more reliably) produced by simply using the right control stick. Most smash attacks can be charged by holding A (or right stick).</h6>
                 <table>
                     <tr className="ul">
                         <th>Move Type</th>
@@ -106,6 +110,7 @@ export function CharDisplay({ char }) {
                 </table>
             
             <h3>Special Attacks</h3>
+            <h6>Special Attacks are performed by pressing B combined with the appropriate direction (no directional input for a Neutral Special). Some can be charged or have variations based on duration of button press.</h6>
                 <table>
                     <tr className="ul">
                         <th>Move Type</th>
@@ -135,6 +140,7 @@ export function CharDisplay({ char }) {
                 </table>
             
             <h3>Aerial Attacks</h3>
+            <h6>Aerial Attacks are performed by combining A with a direction (or no directiof for a Neutral Aerial) while in the air.</h6>
                 <table>
                     <tr className="ul">
                         <th>Move Type</th>
@@ -169,6 +175,7 @@ export function CharDisplay({ char }) {
                 </table>
                
             <h3>Grabs and Throws</h3>
+            <h6>Grabs are performed by pressing L when your opponent is close in front of your character. Pummels are performed by pressing A while holding a grabbed opponent, and throws are performed with the Control Stick after a grab.</h6>
                 <table>
                     <tr className="ul">
                         <th>Move Type</th>
@@ -208,6 +215,7 @@ export function CharDisplay({ char }) {
                 </table>
             
             <h3>Taunts</h3>
+            <h6>Taunts are performed by using the D-Pad buttons (yellow buttons below main control stick). If playing with one joy-con, taunts can alternately be performed by clicking the Control Stick inwards (as a button press) and pressing one of the four main buttons.</h6>
                 <table>
                     <tr className="ul">
                         <th>Move Type</th>
@@ -231,6 +239,7 @@ export function CharDisplay({ char }) {
                     </tr>
                 </table>
             <h3>Final Smash</h3>
+            <h6>The Final Smash is your Character's ultimate attack, and is only accessible after charging up the 'Final Smash Meter', or by activating your Final Smash via an item or other method. Final Smash's are performed like a Neutral Special--pressing B with no directional input. Be advised that: you cannot perform a Neutral Special while your Final Smash is charged, the availability of your Final Smash is time-limited.</h6>
                 <table>
                     <tr>
                         <th>Name</th>

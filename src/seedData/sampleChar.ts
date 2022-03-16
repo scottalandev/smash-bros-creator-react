@@ -1,4 +1,6 @@
-export let sampleChar = {
+import { Character, JabEndType, FinalTargType } from '../types/character'
+
+export let sampleChar: Character = {
     //General
     name: 'Dovahkiin',
     phrase: 'By His Honor is Sworn',
@@ -11,7 +13,7 @@ export let sampleChar = {
     jab: {
         name: 'Shield Bash',
         stages: 3,
-        endType: 'infinite',
+        endType: JabEndType.Infinite,
         desc: 'Bashes twice with shield before double wielding blades'
     },
     dash: {
@@ -130,7 +132,7 @@ export let sampleChar = {
     //Final
     finalSmash: {
         name: 'Breath of Paarthurnax',
-        targetStyle: 'Reticle',
+        targetStyle: FinalTargType.Reticle,
         desc: 'Paarthurnax descends behind stage. Dovahkiin aims reticle to strike opponents with a giant fire breath'
     }
 }

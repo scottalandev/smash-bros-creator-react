@@ -1,6 +1,8 @@
-export let emptyChar = {
+import { Character, JabEndType, FinalTargType } from '../types/character'
+
+export let emptyChar: Character = {
     //General
-    charName: '',
+    name: '',
     phrase: '',
     jumps: 2, //2-6
     weight: 100, //range in game=62-135 (150 for gigaBowser)
@@ -11,7 +13,7 @@ export let emptyChar = {
     jab: {
         name: '',
         stages: 2, //2-4
-        endType: '', //standard, choosable, infinite
+        endType: JabEndType.Standard, //standard, choosable, infinite
         desc: ''
     },
     dash: {
@@ -92,9 +94,9 @@ export let emptyChar = {
         name: '',
         desc: ''
     },
-    thrNt: {
-        name: '',
-        desc: ''
+    pummel: {
+        name: 'Dagger Jab',
+        desc: 'Stabs with dagger while holding opponent'
     },
     thrUp: {
         name: '',
@@ -114,15 +116,15 @@ export let emptyChar = {
     },
 
     //Taunts
-    taunt1: {
+    tauntSd: {
         name: '',
         desc: ''
     },
-    taunt2: {
+    tauntUp: {
         name: '',
         desc: ''
     },
-    taunt3: {
+    tauntDn: {
         name: '',
         desc: ''
     },
@@ -130,7 +132,7 @@ export let emptyChar = {
     //Final
     finalSmash: {
         name: '',
-        targetStyle: '',
+        targetStyle: FinalTargType.Area,
         desc: ''
     }
 }
