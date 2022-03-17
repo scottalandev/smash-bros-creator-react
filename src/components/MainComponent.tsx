@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header, Footer } from './HeadFootComponent';
 import { CharDisplay } from './CharDisplay';
+import { CharForm } from './form';
 import { sampleChar } from '../seedData/sampleChar';
 
 function Main() {
@@ -11,6 +12,7 @@ function Main() {
             </header>
             <main>
                 <h1>Super Smash Bros. Ultimate<br/>Character Creator</h1>
+                <CharForm />
                 <CharDisplay char={sampleChar}/>
             </main>
             <footer><Footer /></footer>
