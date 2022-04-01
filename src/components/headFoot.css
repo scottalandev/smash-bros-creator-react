@@ -1,0 +1,29 @@
+.title {
+  text-align: center;
+  background-color: cyan;
+}
+
+.navbar {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background-color: #ccc;
+  text-align: center;
+  vertical-align: center;
+
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar > * {
+  display: inline-block;
+  background-color: yellow;
+  padding: 10px 50px 10px 50px;
+  box-sizing: inherit;
+  vertical-align: center;
+
+}

@@ -157,13 +157,6 @@ export function CharForm() {
             <BasicPairInput item="tauntSd" label="Side Taunt" />
             <BasicPairInput item="tauntUp" label="Upward Taunt" />
             <BasicPairInput item="tauntDn" label="Downward Taunt" />
-
-
-
-
         </>
     )
 }
-
-
-
