@@ -5,7 +5,7 @@ import "./headFoot.css";
 export function Header() {
   const [stickyClass, setStickyClass] = useState("");
 
-  const titleRef = useRef<HTMLHeadingElement>(null);
+  // const titleRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
     window.addEventListener("scroll", stickyNav);
@@ -15,14 +15,16 @@ export function Header() {
   const stickyNav = () => {
     if (window !== undefined) {
       let scrollDist = window.scrollY;
-      if (null !== titleRef.current) {
-      scrollDist > (titleRef.current.clientHeight + 42) ? setStickyClass("sticky-nav") : setStickyClass("");
-      }
+      // if (null !== titleRef.current) {
+      // scrollDist > (titleRef.current.clientHeight + 42) ? setStickyClass("sticky-nav") : setStickyClass("");
+      scrollDist > 100 ? setStickyClass("sticky-nav") : setStickyClass("");
+      console.log(scrollDist);
     }
   };
 
   const title = (
-    <h1 ref={titleRef} className="title">
+    // <h1 ref={titleRef} className="title">
+    <h1 className="title">
       Super Smash Bros. Ultimate
       <br />
       Character Creator
@@ -36,13 +38,12 @@ export function Header() {
       <NavLink to="/create">Create</NavLink>
     </nav>
   );
-  console.log(titleRef);
 
   return (
-    <>
+    <header>
       {title}
       {navbar}
-    </>
+    </header>
   );
 }
 

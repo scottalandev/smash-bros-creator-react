@@ -1,29 +1,47 @@
-.title {
+header {
+  background-color: teal;
+  margin: 0;
   text-align: center;
-  background-color: cyan;
+}
+
+.title {
+  margin: 0;
+  padding: 15px;
 }
 
 .navbar {
-  position: relative;
+  display: inline-block;
   z-index: 999;
-  width: 100%;
-  background-color: #ccc;
+  border: solid 1px black;
+  border-radius: 5px;
+  overflow: hidden;
   text-align: center;
-  vertical-align: center;
-
+  margin: 0 auto 0 auto;
+  vertical-align: top
 }
 
 .sticky-nav {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
+  margin-bottom: 100px;
 }
 
 .navbar > * {
+  color: white;
+  /* box-sizing: border-box; */
   display: inline-block;
-  background-color: yellow;
-  padding: 10px 50px 10px 50px;
-  box-sizing: inherit;
-  vertical-align: center;
+  width: 20vw;
+  border-left: solid 1px black;
+  padding: 10px;
+  text-decoration: none;
+}
 
+.active {
+  color: red;
+}
+
+.navbar :first-child {
+  border-left: none;
 }

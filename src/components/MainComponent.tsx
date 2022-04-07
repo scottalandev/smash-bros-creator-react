@@ -9,9 +9,9 @@ import { sampleChar } from "../seedData/sampleChar";
 function Main() {
   return (
     <>
-      <header>
+      <>
         <Header />
-      </header>
+      </>
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
