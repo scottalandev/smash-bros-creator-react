@@ -1,0 +1,52 @@
+/* CharPage */
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 25vw;
+  background-color: bisque;
+}
+
+.charDisp {
+  margin-left: 2vw;
+  width: 70%;
+}
+
+
+
+/* CharList */
+
+.listbox {
+  height: 70vh;
+  flex-grow: 1;
+  width: 100%
+}
+
+.sticky-sidebar {
+  position: fixed;
+  width: 25vw;
+  top: 43px;
+  height: calc(100vh - 43px);
+}
+
+
+/* CharDisplay */
+
+.sticky-body {
+  margin-left: 27vw;
+}
+
+table {
+  text-align: left;
+  padding: 10px;
+}
+
+td, th {
+  padding-left: 10px;
+}
+
+.ul {
+  text-decoration: underline;
+}

@@ -1,8 +1,6 @@
-import "./charDisplay.css";
-
-export function CharDisplay({ char }) {
+export function CharDisplay({ char, stickyClass }) {
   return (
-    <>
+    <div className={`charDisp ${stickyClass}`}>
       <h1>Character: {char.name}</h1>
       <h3>General Info</h3>
       <table className="gen-info-table">
@@ -292,6 +290,6 @@ export function CharDisplay({ char }) {
         </tr>
         </tbody>
       </table>
-    </>
+    </div>
   );
 }

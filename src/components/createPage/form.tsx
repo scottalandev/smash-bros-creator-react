@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { JabEndType, FinalTargType } from "../types/character";
+import { JabEndType, FinalTargType } from "../../types/character";
 import "./form.css";
 
 type Input = {
@@ -137,22 +137,22 @@ export function CharForm() {
       <h2>Basic Attacks</h2>
       <JabInput />
       <BasicPairInput item="dash" label="Dash Attack" />
-      <BasicPairInput item="tiltUp" label="Upward Tilt Attack" />
       <BasicPairInput item="tiltSd" label="Side Tilt Attack" />
+      <BasicPairInput item="tiltUp" label="Upward Tilt Attack" />
       <BasicPairInput item="tiltDn" label="Downward Tilt Attack" />
       <h2>Smash Attacks</h2>
-      <BasicPairInput item="smashUp" label="Upward Smash Attack" />
       <BasicPairInput item="smashSd" label="Side Smash Attack" />
+      <BasicPairInput item="smashUp" label="Upward Smash Attack" />
       <BasicPairInput item="smashDn" label="Downward Smash Attack" />
       <h2>Special Attacks</h2>
       <BasicPairInput item="specNt" label="Neutral Special Attack" />
-      <BasicPairInput item="specUp" label="Upward Special Attack" />
       <BasicPairInput item="specSd" label="Side Special Attack" />
+      <BasicPairInput item="specUp" label="Upward Special Attack" />
       <BasicPairInput item="specDn" label="Downward Special Attack" />
       <h2>Aerial Attacks</h2>
       <BasicPairInput item="airNt" label="Neutral Aerial Attack" />
-      <BasicPairInput item="airUp" label="Upward Aerial Attack" />
       <BasicPairInput item="airFw" label="Forward Aerial Attack" />
+      <BasicPairInput item="airUp" label="Upward Aerial Attack" />
       <BasicPairInput item="airDn" label="Downward Aerial Attack" />
       <BasicPairInput item="airBk" label="Backward Aerial Attack" />
       <h2>Grabs and Throws</h2>
