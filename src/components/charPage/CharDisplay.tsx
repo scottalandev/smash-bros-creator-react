@@ -2,6 +2,7 @@ export function CharDisplay({ char, stickyClass }) {
   return (
     <div className={`charDisp ${stickyClass}`}>
       <h1>Character: {char.name}</h1>
+      <h2>Author: {char.auth}</h2> 
       <h3>General Info</h3>
       <table className="gen-info-table">
         <tbody>

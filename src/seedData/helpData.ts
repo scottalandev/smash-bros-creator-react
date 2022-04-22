@@ -6,7 +6,7 @@ export const attackHelp = {
     "Smash Attacks are performed by quickly moving the control stick in a direction and pressing A at the same moment. They are alternatively (and more reliably) produced by simply using the right control stick. Most smash attacks can be charged by holding A (or right stick).",
   special:
     "Special Attacks are performed by pressing B combined with the appropriate direction (no directional input for a Neutral Special). Some can be charged or have variations based on duration of button press.",
-  aerial: "Aerial Attacks are performed by combining A with a direction (or no directiof for a Neutral Aerial) while in the air.",
+  aerial: "Aerial Attacks are performed by combining A with a direction (or no direction for a Neutral Aerial) while in the air.",
   grabs:
     "Grabs are performed by pressing L when your opponent is close in front of your character. Pummels are performed by pressing A while holding a grabbed opponent, and throws are performed with the Control Stick after a grab.",
   taunt:

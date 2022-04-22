@@ -1,9 +1,10 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Header, Footer } from "./headFoot/HeadFootComponent";
 import HomePage from "./HomePage";
 import CharPage from "./charPage/CharPage";
-import { CharForm } from "./createPage/form";
+import CreatePage from './createPage/CreatePage';
+import { emptyChar } from '../seedData/emptyChar';
+import './main.css'
 
 function Main() {
   return (
@@ -15,7 +16,7 @@ function Main() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/chars" element={<CharPage />} />
-          <Route path="/create" element={<CharForm />} />
+          <Route path="/create" element={<CreatePage character={emptyChar} />} />
         </Routes>
       </main>
       <footer>

@@ -4,6 +4,7 @@ export const sampleChars: Character[] = [
     {
     //General
     name: 'Dovahkiin',
+    auth: 'Scott Alan',
     phrase: 'By His Honor is Sworn',
     jumps: 2,
     weight: 100,
@@ -140,6 +141,7 @@ export const sampleChars: Character[] = [
 {
     //General
     name: 'Dovahkiin2',
+    auth: 'Scott Alan',
     phrase: 'By His Honor is Sworn',
     jumps: 2,
     weight: 100,

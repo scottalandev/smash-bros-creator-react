@@ -30,6 +30,7 @@ type FinalSmash = {
 
 export interface Character {
     name: string,
+    auth: string,
     phrase: string,
     jumps: number,
     weight: number,

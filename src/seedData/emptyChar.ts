@@ -3,6 +3,7 @@ import { Character, JabEndType, FinalTargType } from '../types/character'
 export let emptyChar: Character = {
     //General
     name: '',
+    auth: '',
     phrase: '',
     jumps: 2, //2-6
     weight: 100, //range in game=62-135 (150 for gigaBowser)
@@ -95,8 +96,8 @@ export let emptyChar: Character = {
         desc: ''
     },
     pummel: {
-        name: 'Dagger Jab',
-        desc: 'Stabs with dagger while holding opponent'
+        name: '',
+        desc: ''
     },
     thrUp: {
         name: '',
