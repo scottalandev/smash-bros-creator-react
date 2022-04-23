@@ -73,15 +73,32 @@ function JumpInput({ character, handler }) {
 }
 
 function WeightInput({ character, handler }) {
+  // Initiates own state to manage slider display and output
+  const [weightSlider, setWeightSlider] = useState(character.weight);
+
+  // handleWeight manages changes to input and passes data along (via 'changed', which spoofs event data structure) to external handler passed in via props.
+  function handleWeight(event) {
+    setWeightSlider(event.target.value);
+    const changed = {
+      target: {
+        name: "weight",
+        value: event.target.value
+      }
+    }
+    handler(changed);
+  }
+  
   return (
     <>
       <label htmlFor="weight">Character Weight</label>
-      <input type="range" id="weight" min="62" value={character.weight} max="135" onChange={handler} />
-      <output>{character.weight}</output>
+      <input type="range" id="weight" min="62" value={weightSlider} max="135" onChange={handleWeight} />
+      <output>{weightSlider}</output>
       <br />
     </>
   );
 }
+
+
 
 function FinalSmashInput({ character, handler }) {
   return (
@@ -178,6 +195,7 @@ function CharForm({ character }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(char);
     const output = JSON.stringify(char, null, 2);
     console.log(output);
   }
@@ -189,7 +207,12 @@ function CharForm({ character }) {
       <PageSection title="General">
         <TextInput item="phrase" label="Catchphrase" value={char.phrase} handler={onChange} />
         <JumpInput character={char} handler={onChange} />
+
+
         <WeightInput character={char} handler={onChange} />
+        {/* <WeightInput character={char} /> */}
+
+
         <TextAreaSglInput item="specPerk" label="Special Perk" value={char.specPerk} handler={onChange} />
         <FinalSmashInput character={char} handler={onNestedChange} />
       </PageSection>

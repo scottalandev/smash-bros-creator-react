@@ -6,7 +6,7 @@ This project, in early development (as of 3/15/2022) is front end code for a web
 
 ## Project Info
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), with the option `--template typescript`.
+This project was bootstrapped with  [Create React App](https://github.com/facebook/create-react-app), with the option `--template typescript`.
 
 ## To Run
 
