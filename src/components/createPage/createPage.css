@@ -66,3 +66,8 @@ section > button {
   height: 30px;
   margin: 0 auto;
 }
+
+.checkbox {
+  width: auto;
+  vertical-align: middle;
+}
