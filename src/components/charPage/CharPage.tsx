@@ -20,7 +20,7 @@ function CharPage({ chars }) {
   useEffect(() => {
     window.addEventListener("scroll", stickySidebar);
     return () => window.removeEventListener("scroll", stickySidebar);
-  }, []);
+  });
 
   const stickySidebar = () => {
     if (window !== undefined) {
