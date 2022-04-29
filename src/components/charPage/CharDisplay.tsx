@@ -1,4 +1,6 @@
-export function CharDisplay({ char, stickyClass }) {
+export function CharDisplay({ character, stickyClass }) {
+  const char = JSON.parse(character);
+  
   return (
     <div className={`charDisp ${stickyClass}`}>
       <h1>Character: {char.name}</h1>

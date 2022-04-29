@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { CharDisplay } from "./CharDisplay";
 import { CharList } from "./CharList";
-import { sampleChars } from "../../seedData/sampleChars";
 import "./charPage.css";
 
-function CharPage() {
+function CharPage({ chars }) {
   const [sidebarClass, setSidebarClass] = useState("");
   const [bodyClass, setBodyClass] = useState("");
 
@@ -34,11 +33,13 @@ function CharPage() {
   const handleChange = (e) => {
     setSelectedChar(e.target.value);
   };
+  
+  const charObjArr = chars.map((char) => char.charobj);
 
   return (
     <div className="container">
-      <CharList handleChange={handleChange} stickyClass={sidebarClass} />
-      <CharDisplay char={sampleChars[selectedChar]} stickyClass={bodyClass} />
+      <CharList chars={chars} handleChange={handleChange} stickyClass={sidebarClass} />
+      <CharDisplay character={charObjArr[selectedChar]} stickyClass={bodyClass} />
     </div>
   );
 }

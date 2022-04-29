@@ -1,8 +1,7 @@
-import { sampleChars } from "../../seedData/sampleChars";
+// import { sampleChars } from "../../seedData/sampleChars";
 
-export function CharList({ handleChange, stickyClass }) {
-
-  const charNames = sampleChars.map((char, index) => (
+export function CharList({ chars, handleChange, stickyClass }) {
+  const charNames = chars.map((char, index) => (
     <option key={index} value={index}>
       {char.name}
     </option>
@@ -17,3 +16,5 @@ export function CharList({ handleChange, stickyClass }) {
     </div>
   );
 }
+
+// export function CharList({ })

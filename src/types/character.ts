@@ -64,3 +64,13 @@ export interface Character {
     tauntDn: BasicPair,
     finalSmash: FinalSmash    
 }
+
+export interface CharsProps {
+    char_id: number;
+    name: string;
+    auth: string;
+    charobj: string;
+    created_at: Date;
+    modified_at: Date;
+  }
+  
